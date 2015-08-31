@@ -3,11 +3,11 @@ var combSort = function(arr){
   // Your code here.
   var gap = arr.length; //starting gap size as length of arr
   var shrink = 1.3;     //set up ideal shrink factor
-  var swapped = false;
+  var swapped = true;
   //loop until gap = 1 and swapped = false
   // if no swap, can stop sorting
 
-  while (gap >= 1 && swapped === false){
+  while (gap >= 1 && swapped === true){
     //update the gap value for a next comb.
     gap = Math.floor(gap/shrink); //value has to be int
     if (gap < 1){
