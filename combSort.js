@@ -7,7 +7,7 @@ var combSort = function(arr){
   //loop until gap = 1 and swapped = false
   // if no swap, can stop sorting
 
-  while (gap >= 1 && swapped === true){
+  while (gap > 1 || swapped){
     //update the gap value for a next comb.
     gap = Math.floor(gap/shrink); //value has to be int
     if (gap < 1){
